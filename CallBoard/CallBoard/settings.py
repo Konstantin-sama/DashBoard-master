@@ -24,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'django-insecure-vcl&xvz4@o#e=9vkf9imt9kysv1_*8zn1fpm4#=(-j2^6l04ph'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -95,7 +96,6 @@ WSGI_APPLICATION = 'CallBoard.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
 
 DATABASES = {
     'default': {

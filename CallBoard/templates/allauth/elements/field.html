@@ -1,0 +1,30 @@
+{% load allauth %}
+<p>
+    <label for="{{ attrs.id }}">
+        {% slot label %}
+        {% endslot %}
+    </label>
+    {% if attrs.type == "textarea" %}
+    <textarea %} %} %} %} %} %}
+              %} %}checked{% %}disabled{% %}id="{{ attrs.id }}" %}name="{{ attrs.name }}"
+              %}placeholder="{{ attrs.placeholder }}" %}required{%
+              %}rows="{{ attrs.rows }}" attrs.checked attrs.disabled attrs.id attrs.name attrs.placeholder
+              attrs.required attrs.rows endif endif endif endif
+              endif endif endif if if if if
+              if if if {% {% {% {%
+              {% {% {% {% {% {%
+              {%>{% slot value %}{% endslot %}</textarea>
+    {% else %}
+    <input %} %} %} %} %} %}
+           %} %}autocomplete="{{ attrs.autocomplete }}" %}checked{% %}disabled{% %}id="{{ attrs.id }}"
+           %}name="{{ attrs.name }}"
+           %}placeholder="{{ attrs.placeholder }}" %}required{% attrs.autocomplete attrs.checked attrs.disabled attrs.id
+           attrs.name attrs.placeholder attrs.required endif endif endif endif
+           endif endif endif if if if if
+           if if if value="{{ attrs.value|default_if_none:" {% {% {%
+           {% {% {% {% {% {% {%
+           {%" }}"
+    type="{{ attrs.type }}">
+    {% endif %}
+    {% if attrs.help_text %}<span class="helptext">{{ attrs.help_text }}</span>{% endif %}
+</p>
